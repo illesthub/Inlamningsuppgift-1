@@ -140,10 +140,27 @@ html, body {
         flex: 3;
     }
 
-    .main-menu .links {
-        flex: 2;
+    .main-menu .mid-menu .links .icons a {
+        flex: 3;
         display: flex;
         justify-content: end;
         align-items: center;
     }
+        .main-menu .mid-menu .links .icons {
+            text-decoration: none;
+            color: var(--color-theme-dark);
+            margin: 0 0.8rem;
+
+        }
+
+        .main-menu .mid-menu .links .icons:hover {
+         
+            color: var(--color-theme);
+            
+        }
+
+            .main-menu .mid-menu .links .icons i {
+                font-size: var(--font-size-16);
+            }
+
 
