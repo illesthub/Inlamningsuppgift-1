@@ -14,7 +14,7 @@
     
     
     <header>
-        <nav class="main-menu d-none">
+        <nav class="main-menu">
             <div class="top-menu">
                 <div class="container">
                     <div class="site-settings">
@@ -62,8 +62,10 @@
                         <a class="icons" href="#"><i class="fa-regular fa-user me-2"></i>My account</a>
                         <a class="icons" href="#"><i class="fa-regular fa-heart"></i></a>
                         <a class="icons" href="#"><i class="fa-regular fa-shuffle"></i></a>
-                        <a class="icons" href="#"><i class="fa-regular fa-cart-shopping me-2"></i>
-                            <span id="cart-total">€99999.00</span>
+                        <a id="cart" class="icons" href="#">
+                            <span class="badge rounded-pill bg-theme">99+</span>
+                            <i class="fa-regular fa-cart-shopping me-2"></i>
+                            <span>€99999.00</span>
                         </a>
                     </div>
                 </div>
@@ -93,7 +95,7 @@
         </nav>
     </header>
 
-    <section class="showcase d-none">
+    <section class="showcase">
         <div class="container">
             <div class="showcase-body">
                 <h1>Shopping is <strong>MORE FUN</strong></h1>
@@ -104,7 +106,7 @@
         </div>
      </section>
 
-     <section class="webshop-info d-none">
+     <section class="webshop-info">
         <div class="container">
             <div class="info-box">
                 <img src="images/icons/free-shipping-icon.svg" alt="Free shipping">
@@ -139,34 +141,55 @@
 
      <section class="shop-by-category">
         <div class="container">
-            <div class="section-title d-none">
+            <div class="section-title">
                 <h1>SHOP BY <span>CATEGORY</span></h1>
                 <img src="images/wave-line.svg" alt="waveline">
                 <p>We always try to give you the best product within a fast and reliable way</p>
             </div>
 
             <div class="grid">
-                <div id="category-box-1" class="category-box">
-                    <div class="category-box-title">Men</div>
-                </div>
-                <div id="category-box-2" class="category-box">
-                    <div class="category-box-title">Women</div>
-                </div>
-                <div id="category-box-3" class="category-box">
-                    <div class="category-box-title">Kids</div>
-                </div>
-                <div id="category-box-4" class="category-box">
-                    <div class="category-box-title">Shoes</div>
-                </div>
-                <div id="category-box-5" class="category-box">
-                    <div class="category-box-title">Hats</div>
-                </div>
-                <div id="category-box-6" class="category-box">
-                    <div class="category-box-title">Sunglasses</div>
-                </div>
-                <div id="category-box-7" class="category-box">
-                    <div class="category-box-title">Watches</div>
-                </div>
+                <a href="#" id="category-box-1" class="category-box">
+                    <div class="category-box-title">
+                        Men
+                        <span>175 items</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-2" class="category-box">
+                    <div class="category-box-title">
+                        Women
+                        <span>340 items</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-3" class="category-box">
+                    <div class="category-box-title">
+                        Kids
+                        <span>155 items</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-4" class="category-box">
+                    <div class="category-box-title">
+                        Shoes
+                        <span>97 items</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-5" class="category-box">
+                    <div class="category-box-title">
+                        Hats
+                        <span>20 items</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-6" class="category-box">
+                    <div class="category-box-title">
+                        Sunglasses
+                        <span>43 items</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-7" class="category-box">
+                    <div class="category-box-title">
+                        Watches
+                        <span>9 items</span>
+                    </div>
+                </a>
             </div>
 
         </div>

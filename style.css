@@ -69,6 +69,10 @@ html, body {
         color: var(--color-white)
     }
 
+.bg-theme {
+    background-color: var(--color-theme);
+}
+
 .section-title {
     padding: 3rem 0;
     color: var(--color-theme-dark);
@@ -230,6 +234,20 @@ html, body {
                 font-size: var(--font-size-16);
             }
 
+            .main-menu .mid-menu .links #cart {
+                position: relative;
+            }
+
+                .main-menu .mid-menu .links #cart .badge {
+                    position: absolute;
+                    top: -1.2rem;
+                    left: 0.7rem;
+                }
+
+                    .main-menu .mid-menu .links #cart:hover .badge {
+                        background-color: var(--color-theme-dark);
+                    }
+
 /* main-menu bot */
 
 .main-menu .bot-menu {
@@ -357,6 +375,7 @@ html, body {
     }
 
     .shop-by-category .category-box {
+        position: relative;
         background-color: var(--color-gray-1);
         border-radius: var(--border-radius-small);
         height: 100%;
@@ -365,13 +384,28 @@ html, body {
     }
 
       .shop-by-category .category-box .category-box-title {
+        position: absolute;
+        left: 0;
+        bottom: 0;
         width: 50%;
         border-radius: 0 var(--border-radius-small) 0 0;
         background-color: var(--color-theme-dark);
         color: var(--color-theme);
         padding: 0.5rem 1rem;
         font-weight: var(--font-weight-medium);
+        height: 35px;
       }
+
+         .shop-by-category .category-box:hover .category-box-title {
+            height: 75px;
+         }
+
+            .shop-by-category .category-box .category-box-title span {
+                display: block;
+                color: var(--color-white);
+                font-size: 0.8rem;
+                margin-top: 0.5rem;
+            }
 
 #category-box-1 {
     grid-column: 1 / 2;
