@@ -512,7 +512,7 @@ html, body {
         }
 
             .new-arrivals .card:hover .card-body h1 {
-            margin-bottom: 0;
+                margin-bottom: 0;
             }
 
             .new-arrivals .card .card-body .card-old-price {
@@ -823,15 +823,241 @@ html, body {
 .top-sellers .grid {
     display: grid;
     gap: 0.8rem;
-    grid-template-columns: repeat(5, minmax(100px, 249px));
-    grid-template-rows: repeat(3, minmax(100px, 249px));
+    grid-template-columns: repeat(4, minmax(100px, 295px));
+    grid-template-rows: repeat(2, minmax(100px, 295px));
+    padding-top: 2rem;
+    padding-left: 3.2rem;
 }
 
 .top-sellers .top-sellers-box {
     position: relative;
-    background-color: var(--color-gray-1);
+    background-color: var(--color-gray-3);
     border-radius: var(--border-radius-small);
+    overflow: hidden;
     height: 100%;
     width: 100%;
-    overflow: hidden;
 }
+
+#top-sellers-box-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / -1;
+}
+#top-sellers-box-2 {
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
+}
+#top-sellers-box-3 {
+    grid-column: 3 / -1;
+    grid-row: 2 / -1;
+}
+
+    .top-sellers .top-sellers-box img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .top-sellers .top-sellers-box .box-title {
+        position: absolute;
+        background-color: var(--color-dark);
+        color: var(--color-white);
+        opacity: 0.85;
+        overflow: hidden;
+        width: 100%;
+        height: 12%;
+        bottom: 0;
+        padding-left: 2rem;
+        padding-top: 1.5rem;
+        transition: 0.3s height ease-in-out;
+
+    }
+
+    .top-sellers .top-sellers-box:hover .box-title {
+        height: 100%;
+
+    }
+
+        .top-sellers .top-sellers-box .box-title h1 {
+            font-size: 1.125rem;
+            transition: 0.3s ease-in-out;
+            font-weight: var(--font-weight-regular);
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .top-sellers .top-sellers-box:hover .box-title h1 {    
+            margin-bottom: 0;
+            padding-bottom: 1rem;
+            margin-top: 73%;
+        }
+
+        .top-sellers .top-sellers-box .box-title button {
+            background-color: transparent;
+            color: var(--color-white);
+            border: 1px solid var(--color-white);
+            font-size: 0.875rem;
+            padding-left: 0.9rem;
+            padding-right: 0.9rem;
+            padding-top: 0;
+            margin-bottom: 0.5rem;
+
+        }
+
+        .top-sellers .top-sellers-box .box-title .old-price {
+            font-size: var(--font-size-16);
+            text-decoration: line-through;
+            margin: 0;
+        }
+
+        .top-sellers .top-sellers-box .box-title .discount-price {
+            font-size: var(--font-size-24);
+            color: var(--color-theme);
+            margin-bottom: 0;
+            transition: 0.3s ease-in-out;
+            justify-content: space-between;
+            display: flex;
+
+        }
+
+        .top-sellers .top-sellers-box .box-title .discount-price .star-rating {
+            padding-right: 2rem;
+            font-size: var(--font-size-18);
+        }
+
+        .top-sellers .top-sellers-box .box-title h1 {
+            font-family: var(--font-roboto);
+            font-size: var(--font-size-18);
+            font-weight: none;
+            padding-bottom: 2rem;
+        }
+
+    .top-sellers .top-sellers-box .box-menu {
+        position: absolute;
+        right: 2rem;
+        list-style: none;
+        padding: 0.8rem;
+        font-size: 1.25rem;
+        border-radius: var(--border-radius-medium);
+        background-color: var(--color-white);
+        transition: top 1s ease-in-out;
+    }
+
+    .top-sellers .top-sellers-box:hover .box-menu {
+        top: 20px;
+        transition: top 2s ease-in-out;
+    }
+
+    .top-sellers .top-sellers-box .box-menu li {
+            margin-top: 0.3rem;
+            margin-bottom: 0.3rem;
+            font-size: 1em;
+        }
+
+        .top-sellers .top-sellers-box .box-menu li a {
+                color: var(--color-gray-0);
+
+            }
+                .top-sellers .top-sellers-box .box-menu li a:hover {
+                    color: var(--color-theme);
+                }
+
+/* smaller grid-boxes */
+
+.top-sellers .top-sellers-box-small {
+    position: relative;
+    background-color: var(--color-gray-3);
+    border-radius: var(--border-radius-small);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+    .top-sellers .top-sellers-box-small .box-title {
+    position: absolute;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    opacity: 0.85;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    padding-left: 1rem;
+    padding-top: 1.2rem;
+    transition: 0.3s height ease-in-out;
+    }
+
+    .top-sellers .top-sellers-box-small:hover .box-title {
+        height: 100%;
+    }
+
+        .top-sellers .top-sellers-box-small .box-title h1 {
+            font-size: 1.2rem;
+            font-weight: var(--font-weight-regular);
+            padding-bottom: 0.5rem;
+            transition: 0.3s ease-in-out;
+        }
+
+        .top-sellers .top-sellers-box-small:hover .box-title h1 {
+            padding-top: 8.5rem;
+        }
+
+        .top-sellers .top-sellers-box-small .box-title button {
+            background-color: transparent;
+            color: var(--color-white);
+            border: 1px solid var(--color-white);
+            font-size: 0.875rem;
+            padding-left: 0.9rem;
+            padding-right: 0.9rem;
+            padding-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .top-sellers .top-sellers-box-small .box-title .old-price {
+            text-decoration: line-through;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-sellers .top-sellers-box-small .box-title .discount-price {
+            color: var(--color-theme);
+            font-size: 1.7rem;
+            margin: 0;
+            padding: 0;
+            justify-content: space-between;
+            display: flex;
+        }
+
+             .top-sellers .top-sellers-box-small .box-title .discount-price .star-rating {
+                padding-right: 1.5rem;
+                font-size: 1.3rem;
+             }
+
+.top-sellers .top-sellers-box-small .box-menu {
+    position: absolute;
+    right: 2rem;
+    list-style: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: var(--border-radius-medium);
+    background-color: var(--color-white);
+    transition: top 1s ease-in-out;
+}
+
+    .top-sellers .top-sellers-box-small:hover .box-menu {
+        top: 20px;
+        transition: top 2s ease-in-out;
+    }
+
+    .top-sellers .top-sellers-box-small .box-menu li {
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        font-size: 1em;
+    }
+
+    .top-sellers .top-sellers-box-small .box-menu li a {
+            color: var(--color-gray-0);
+
+        }
+            .top-sellers .top-sellers-box-small .box-menu li a:hover {
+                color: var(--color-theme);
+            }
+

@@ -189,7 +189,7 @@
         </div>
     </section>
 
-    <section class="new-arrivals">
+    <section class="new-arrivals d-none">
         <div class="container">
             <div class="section-title d-none">
                 <h1>NEW <span>ARRIVALS</span></h1>
@@ -285,7 +285,7 @@
         </div>
     </section>
 
-    <section class="newcustomer-deals">
+    <section class="newcustomer-deals d-none">
             <div class="container">
                 <div class="offer">
                     <div class="d-flex">
@@ -302,7 +302,7 @@
             </div>
     </section>
 
-    <section class="featured-products">
+    <section class="featured-products d-none">
         <div class="container">
             <div class="section-title">
                 <h1>FEATURED <span>PRODUCTS</span></h1>
@@ -398,7 +398,7 @@
         </div>
      </section>
 
-     <section class="flash-sale">
+     <section class="flash-sale d-none">
         <div class="container">
             <div class="offer">
                 <h1>FLASH SALE</h1>
@@ -426,40 +426,91 @@
 
      <section class="top-sellers">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title d-none">
                 <h1>TOP <span>SELLERS</span></h1>
                 <img src="images/wave-line.svg" alt="waveline">
                 <p>Check out our weekly top sellers in all category</p>
             </div>
             <div class="grid">
-                <a href="#" id="top-sellers-box-1" class="top-sellers-box">
-                    <div class="category-box-title">
-                        Men
-                        <span>175 items</span>
+                <div id="top-sellers-box-1" class="top-sellers-box">
+                    <div class="box-title">
+                        <h1>Men's denim shirt</h1>
+                        <button disabled>Fashion</button>
+                        <p class="old-price">€60.00</p>
+                        <h2 class="discount-price">€40.00
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </h2>
                     </div>
-                </a>
-                <a href="#" id="top-sellers-box-2" class="top-sellers-box">
-                    <div class="category-box-title">
-                        Women
-                        <span>340 items</span>
+                    <img src="images/placeholders/placeholder-men-shirt.svg" alt="placeholder image">
+                    <ul class="box-menu">
+                            <li><i class="fa-solid fa-circle instock"></i></li>
+                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href=""><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href=""><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href=""><i class="fa-regular fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+
+                <div id="top-sellers-box-2" class="top-sellers-box-small">
+                    <div class="box-title">
+                        <h1>Women's leatherbag and shoe</h1>
+                        <button disabled>Accessories</button>
+                        <p class="old-price">€140.00</p>
+                        <h2 class="discount-price">€95.00
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </h2>
                     </div>
-                </a>
-                <a href="#" id="top-sellers-box-3" class="top-sellers-box">
-                    <div class="category-box-title">
-                        Kids
-                        <span>155 items</span>
+                    <img src="images/placeholders/placeholder-women-bag-shoe.svg" alt="">
+                    <ul class="box-menu">
+                        <li><i class="fa-solid fa-circle instock"></i></li>
+                        <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa-regular fa-shuffle"></i></a></li>
+                        <li><a href=""><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                        <li><a href=""><i class="fa-regular fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+                <div id="top-sellers-box-3" class="top-sellers-box-small">
+                    <div class="box-title">
+                        <h1>New look men's sneakers</h1>
+                        <button disabled>Shoes</button>
+                        <p class="old-price">€95.00</p>
+                        <h2 class="discount-price">€50.00
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </h2>
                     </div>
-                </a>
+                    <img src="images/placeholders/placeholder-men-sneaker.svg" alt="">
+                    <ul class="box-menu">
+                        <li><i class="fa-solid fa-circle instock"></i></li>
+                        <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa-regular fa-shuffle"></i></a></li>
+                        <li><a href=""><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                        <li><a href=""><i class="fa-regular fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
 
      </section>
 
-
-
-
-
-    <div style="height: 4000px;"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="script.js"></script>
